@@ -51,7 +51,7 @@ GIF created with VEED.io
 Challenges encountered while building the app:
 
 - Implementing the timer functionality and ensuring it works smoothly with question submission was challenging but rewarding. Making sure the UI looked visually appealing was one of my top priorities
-- Managing the state of the app to track the number of correct answers and average time per question required careful consideration of data flow and logic. Also had several difficulties trying to shuffle the answers due to syntac errors.
+- Managing the state of the app to track the number of correct answers and average time per question required careful consideration of data flow and logic. Also had several difficulties trying to shuffle the answers due to syntax errors.
 
 ## License
 
