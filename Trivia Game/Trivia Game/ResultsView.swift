@@ -18,8 +18,6 @@ struct ResultsView: View {
 
     var body: some View {
         VStack {
-            Spacer()
-            
             // Title
             Text("Game Over!")
                 .font(.system(size: 50, weight: .bold, design: .rounded))
@@ -34,6 +32,7 @@ struct ResultsView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(.green)
                 .padding(.top, 20)
+                .shadow(color: .black, radius: 5, x: 0, y: 3)
 
             // Total Time Taken
             Text("Total Time: \(totalTime) seconds")
@@ -41,12 +40,14 @@ struct ResultsView: View {
                 .italic()
                 .foregroundColor(.white)
                 .padding(.top, 10)
+                .shadow(color: .black, radius: 5, x: 0, y: 3)
 
             // Average Time per Question
             Text("Average Time per Question: \(String(format: "%.2f", averageTime)) seconds")
                 .font(.title2)
                 .foregroundColor(.orange)
                 .padding(.top, 10)
+                .shadow(color: .black, radius: 5, x: 0, y: 3)
 
             // Performance Rating based on score
             Text("Performance Rating: \(performanceRating())")
@@ -54,6 +55,7 @@ struct ResultsView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.blue)
                 .padding(.top, 20)
+                .shadow(color: .black, radius: 5, x: 0, y: 3)
             
             Spacer()
         }
@@ -65,6 +67,7 @@ struct ResultsView: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: EmptyView())
         .multilineTextAlignment(.center)
+        .transition(.opacity) // Smooth transition effect
     }
     
     // A function to calculate the performance rating based on score
@@ -72,13 +75,13 @@ struct ResultsView: View {
         let percentage = Double(correctAnswers) / Double(totalQuestions) * 100
         switch percentage {
         case 90...100:
-            return "Excellent"
+            return "⭐ Excellent ⭐"
         case 70...89:
-            return "Good"
+            return "👍 Good 👍"
         case 50...69:
-            return "Average"
+            return "😐 Average 😐"
         default:
-            return "Needs Improvement"
+            return "🚧 Needs Improvement 🚧"
         }
     }
 }

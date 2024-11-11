@@ -29,6 +29,7 @@
 		A3E420E72CE17777000D6621 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		A3E420E92CE177B4000D6621 /* TriviaGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaGameView.swift; sourceTree = "<group>"; };
 		A3E420EB2CE19882000D6621 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		A3E420ED2CE1B7F8000D6621 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		A3E420C92CE176A1000D6621 = {
 			isa = PBXGroup;
 			children = (
+				A3E420ED2CE1B7F8000D6621 /* README.md */,
 				A3E420D42CE176A1000D6621 /* Trivia Game */,
 				A3E420D32CE176A1000D6621 /* Products */,
 			);
