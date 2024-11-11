@@ -42,7 +42,7 @@ The following **additional** features are implemented:
 
 My video walkthrough:
 
-<img style="max-width:300px;" src="">
+<img style="max-width:300px;" src="Trivia Game/Project5.gif">
 
 GIF created with VEED.io
 
